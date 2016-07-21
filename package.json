@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JoelAcedo/RealChat/issues"
   },
-  "homepage": "https://github.com/JoelAcedo/RealChat#readme"
+  "homepage": "https://github.com/JoelAcedo/RealChat#readme",
+  "dependencies": {
+    "st": "^1.2.0"
+  }
 }
