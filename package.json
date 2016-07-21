@@ -4,7 +4,9 @@
   "description": "A realtime chat made with node, only for educating purpose",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run build-js",
+    "build-js": "browserify client/app.js - o public/app.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,11 @@
   },
   "homepage": "https://github.com/JoelAcedo/RealChat#readme",
   "dependencies": {
-    "st": "^1.2.0"
+    "course": "0.0.1",
+    "st": "^1.2.0",
+    "webrtc2images": "^1.4.4"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1"
   }
 }
