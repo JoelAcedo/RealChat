@@ -17,8 +17,9 @@ router.post('/process', function(req, res) {
         if (err) return fail(err, res);
 
         console.log(body);
+
         res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify({ ok: true}));
+        res.end(JSON.stringify({ ok: true }));
     });
 });
 
@@ -29,12 +30,9 @@ function onRequest (req, res) {
         router(req, res, function (err) {
             if (err) return fail(err, res);
 
-
-
+            res.statusCode = 404;
+            res.end(`404 Not Found: ${req.url}`);
         });
-
-        res.statusCode = 404;
-        res.end(`404 Not Found: ${req.url}`);
     });
 };
 
