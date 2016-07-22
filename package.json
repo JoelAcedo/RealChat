@@ -19,9 +19,13 @@
   },
   "homepage": "https://github.com/JoelAcedo/RealChat#readme",
   "dependencies": {
+    "async": "^2.0.0",
     "body": "^5.1.0",
+    "concat-stream": "^1.5.1",
     "course": "0.0.1",
+    "data-uri-to-buffer": "0.0.4",
     "st": "^1.2.0",
+    "uuid": "^2.0.2",
     "webrtc2images": "^1.4.4",
     "xhr": "^2.2.1"
   },
